@@ -1,0 +1,13 @@
+{
+  "name": "sirinsirin-front",
+  "version": "1.0.0",
+  "scripts": {
+    "serve": "concurrently \"cd sirinsirin-front-web && npm run dev\" \"cd sirinsirin-front-admin && npm run dev\"",
+    "web": "cd sirinsirin-front-web && npm run dev",
+    "admin": "cd sirinsirin-front-admin && npm run dev",
+    "start": "npm run serve"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
