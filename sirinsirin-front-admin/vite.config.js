@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/admin',
   plugins: [
     vue(),
   ],
@@ -19,11 +20,11 @@ export default defineConfig({
     open: true,
     hmr: true,
     proxy: {
-      "/api": {
+      "/admin-api": {
         // target: "http://localhost:7070/",
         target: "http://localhost:7079/",  //  微服务
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '/admin'),
+        rewrite: (path) => path.replace(/^\/admin-api/, '/admin'),
       }
     }
   }

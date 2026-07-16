@@ -1,7 +1,7 @@
 import Request from "./Request";
 
 const Api = {
-    sourcePath: "/api/file/getResource?sourceName=",
+    sourcePath: "/admin-api/file/getResource?sourceName=",
     checkCode:"/account/checkCode",
     login:"/account/login",
     uploadImage: "/file/uploadImage",
@@ -25,7 +25,7 @@ const Api = {
     loadUser:"/user/loadUser",
     changeStatus: "/user/changeStatus",
     //视频资源
-    getVideoResource:"/api/file/videoResource",
+    getVideoResource: "/admin-api/file/videoResource",
     auditVideo:"/videoInfo/auditVideo",
     deleteVideo:"/videoInfo/deleteVideo",
     getSetting: "/setting/getSetting",
